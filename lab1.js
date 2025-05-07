@@ -11,10 +11,15 @@ p.style.background = "gray"
 
 let img = document.getElementsByTagName("img")[0]
 img.src = "./logo-h.png";
+img.style.height= "10rem" ;
 
 
 let items = document.querySelectorAll('.list');
 let texts = ["first", "second", "third"];
 for (let i = 0; i < items.length; i++) {
-  items[i].innerText = texts[i];
+    items[i].innerText = texts[i];
+    items[i].style.color= "red";
+    items[i].style.fontWeight = "bold";
 }
+
+
